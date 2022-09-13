@@ -4,7 +4,7 @@ Android-SDK可以帮助您快速搭建基于Android平台的音视频应用，�
 
 ## 问题反馈
 
-* 任何关于SDK的问题，您可以在[Issues](https://github.com/VideoCloudTeam/Android-SDK/issues/new)中反馈。
+* 任何关于SDK的问题，您可以在[Issues]中反馈。
 
 ## 版本说明
 请优先使用Tag中的最新版本，master分支SDK供体验新接口及测试使用。

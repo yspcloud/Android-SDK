@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/zj_participants_pop_bg">
+
+    <ScrollView
+        android:layout_width="375dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_cancel">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/pop_background"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/personal_name" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+
+                 <TextView
+                    android:id="@+id/tv_change_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="@string/participants_change_name"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+                <LinearLayout
+                    android:id="@+id/linear_release_mute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_release_mute"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:text="解除静音"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="16sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/color_EFEFEF"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linear_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_pick"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:text="选看"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="16sp" />
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/color_EFEFEF" />
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/ll_all_see"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_all_see"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:visibility="visible"
+                        android:text="设为焦点"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/color_EFEFEF" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pop_background"
+        android:gravity="center"
+        android:text="@string/participants_cancel"
+        android:layout_margin="10dp"
+        android:textColor="@color/text_color_333333"
+        android:textSize="16sp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+    </TextView>
+
+</RelativeLayout>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/zj_participants_pop_bg"
+    android:padding="10dp">
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:id="@+id/tv_cancel"
+        android:layout_width="375dp"
+        android:layout_height="45dp"
+        android:background="@drawable/pop_background"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="@string/participants_cancel"
+        android:textColor="@color/text_color_333333"
+        android:textSize="16sp"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_above="@id/tv_cancel"
+        android:layout_width="375dp"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp"
+        >
+        <ScrollView
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/pop_background"
+                >
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:text="@string/personal_name"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF"/>
+                <LinearLayout
+                    android:id="@+id/linear_release_mute"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tv_release_mute"
+                        android:layout_width="match_parent"
+                        android:layout_height="54dp"
+                        android:gravity="center"
+                        android:text="解除静音"
+                        android:textColor="@color/text_color_333333"
+                        android:textSize="16sp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="18dp"
+                        android:background="@color/color_EFEFEF"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_remove"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="@string/participants_remove"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp"/>
+                <View
+                    android:id="@+id/line1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_change_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="@string/participants_change_name"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_set_role"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="@string/participants_set_host"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp" />
+                <View
+                    android:id="@+id/line2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_main_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="设为主会场"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp"/>
+                <View
+                    android:id="@+id/line_venue"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:visibility="gone"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:text="设为嘉宾"
+                    android:visibility="gone"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp"/>
+                <View
+                    android:id="@+id/line_client"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:visibility="gone"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_all_see"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="设为焦点"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginRight="18dp"
+                    android:background="@color/color_EFEFEF" />
+                <TextView
+                    android:id="@+id/tv_pick"
+                    android:layout_width="match_parent"
+                    android:layout_height="54dp"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:text="选看"
+                    android:textColor="@color/text_color_333333"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</RelativeLayout>
